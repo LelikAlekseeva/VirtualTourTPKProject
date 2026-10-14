@@ -1,0 +1,266 @@
+﻿@page
+@model IndexModel
+@{
+    ViewData["Title"] = "Виртуальная экскурсия по колледжу";
+}
+
+<!-- Главный экран -->
+<section class="hero">
+    <div class="hero-content">
+
+        <div class="hero-icon">🏫</div>
+
+        <h1>Виртуальная экскурсия<br />по колледжу</h1>
+
+        <p>
+            Исследуйте корпуса, этажи и помещения колледжа,
+            просматривайте панорамы и находите нужный кабинет
+            с помощью интерактивной навигации.
+        </p>
+
+        <div class="hero-buttons">
+            <a href="/Tour" class="btn-tour">
+                Начать виртуальный тур
+            </a>
+
+            <a href="/Rooms" class="btn-secondary">
+                Найти кабинет
+            </a>
+        </div>
+
+    </div>
+</section>
+
+
+<!-- Возможности системы -->
+<section class="features">
+
+    <div class="section-header">
+        <span class="section-label">ВОЗМОЖНОСТИ СИСТЕМЫ</span>
+
+        <h2>Исследуйте колледж онлайн</h2>
+
+        <p>
+            Виртуальная экскурсия позволяет ознакомиться
+            с инфраструктурой колледжа и быстро найти нужное помещение.
+        </p>
+    </div>
+
+
+    <div class="cards">
+
+        <!-- Корпуса -->
+        <div class="card">
+
+            <div class="card-icon building-icon">
+                🏢
+            </div>
+
+            <h3>Корпуса</h3>
+
+            <p>
+                Просматривайте здания колледжа,
+                их адреса и описание.
+            </p>
+
+            <a href="/Buildings" class="card-link">
+                Посмотреть корпуса →
+            </a>
+
+        </div>
+
+
+        <!-- Помещения -->
+        <div class="card">
+
+            <div class="card-icon room-icon">
+                🚪
+            </div>
+
+            <h3>Помещения</h3>
+
+            <p>
+                Находите аудитории, коридоры,
+                лестницы и другие помещения.
+            </p>
+
+            <a href="/Rooms" class="card-link">
+                Найти помещение →
+            </a>
+
+        </div>
+
+
+        <!-- Преподаватели -->
+        <div class="card">
+
+            <div class="card-icon teacher-icon">
+                🧑‍🏫
+            </div>
+
+            <h3>Преподаватели</h3>
+
+            <p>
+                Найдите преподавателя по фамилии
+                и узнайте расположение его кабинета.
+            </p>
+
+            <a href="/Teachers" class="card-link">
+                Найти преподавателя →
+            </a>
+
+        </div>
+
+
+        <!-- Панорамы -->
+        <div class="card">
+
+            <div class="card-icon panorama-icon">
+                🌐
+            </div>
+
+            <h3>Панорамы 360°</h3>
+
+            <p>
+                Осматривайте помещения колледжа
+                с помощью панорамных изображений.
+            </p>
+
+            <a href="/Panoramas" class="card-link">
+                Смотреть панорамы →
+            </a>
+
+        </div>
+
+
+        <!-- Навигация -->
+        <div class="card">
+
+            <div class="card-icon route-icon">
+                🗺️
+            </div>
+
+            <h3>Навигация</h3>
+
+            <p>
+                Постройте маршрут от главного входа
+                до выбранного кабинета.
+            </p>
+
+            <a href="/Tour" class="card-link">
+                Построить маршрут →
+            </a>
+
+        </div>
+
+
+        <!-- Этажи -->
+        <div class="card">
+
+            <div class="card-icon floor-icon">
+                🏢
+            </div>
+
+            <h3>Этажи</h3>
+
+            <p>
+                Просматривайте расположение помещений
+                на каждом этаже корпуса.
+            </p>
+
+            <a href="/Floors" class="card-link">
+                Посмотреть этажи →
+            </a>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- Как пользоваться -->
+<section class="how-it-works">
+
+    <div class="section-header">
+
+        <span class="section-label">КАК ЭТО РАБОТАЕТ</span>
+
+        <h2>Найти нужное место — просто</h2>
+
+    </div>
+
+
+    <div class="steps">
+
+        <div class="step">
+
+            <div class="step-number">1</div>
+
+            <div>
+                <h3>Выберите помещение</h3>
+
+                <p>
+                    Найдите нужный кабинет или помещение
+                    в списке объектов колледжа.
+                </p>
+            </div>
+
+        </div>
+
+
+        <div class="step">
+
+            <div class="step-number">2</div>
+
+            <div>
+                <h3>Откройте панораму</h3>
+
+                <p>
+                    Просмотрите панорамную фотографию
+                    выбранной точки.
+                </p>
+            </div>
+
+        </div>
+
+
+        <div class="step">
+
+            <div class="step-number">3</div>
+
+            <div>
+                <h3>Постройте маршрут</h3>
+
+                <p>
+                    Получите маршрут от главного входа
+                    до нужного кабинета.
+                </p>
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- Нижний призыв -->
+<section class="start-tour">
+
+    <div class="start-tour-content">
+
+        <h2>Готовы начать экскурсию?</h2>
+
+        <p>
+            Исследуйте колледж и найдите нужное помещение
+            прямо сейчас.
+        </p>
+
+        <a href="/Tour" class="btn-tour">
+            Начать виртуальный тур →
+        </a>
+
+    </div>
+
+</section>
